@@ -1,6 +1,6 @@
 :root {
-  --bg-color: 0,0,0;
-  --shadow-color: 255,255,255;
+  --bg-color: 255,255,255;
+  --shadow-color: 0,0,0;
 }
 
 body {
