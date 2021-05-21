@@ -63,27 +63,27 @@
 	</div>
   <form id="controls">
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="background" id="blackBackground" checked value="1">
-      <label class="form-check-label custom-text" for="blackBackground">
-        Black Background - White Shadow
+      <input class="form-check-input" type="radio" name="background" id="whiteBackground" checked value="1">
+      <label class="form-check-label custom-text" for="whiteBackground">
+        White - Black
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="background" id="whiteBackground" value="2">
-      <label class="form-check-label custom-text" for="whiteBackground">
-        White Background - Black Shadow
+      <input class="form-check-input" type="radio" name="background" id="blackBackground" value="2">
+      <label class="form-check-label custom-text" for="blackBackground">
+        Black - White
       </label>
     </div>
     <div class="form-check">
       <input class="form-check-input" type="radio" name="background" id="greenBackground" value="3">
       <label class="form-check-label custom-text" for="greenBackground">
-        Green Background - Blue Shadow
+        Green - Blue
       </label>
     </div>
     <div class="form-check">
       <input class="form-check-input" type="radio" name="background" id="blueBackground" value="4">
       <label class="form-check-label custom-text" for="blueBackground">
-        Blue Background - Green Shadow
+        Blue - Green
       </label>
     </div>
   </div>
@@ -102,9 +102,9 @@
   $('#controls input').on('change', function() {
     let value = myRadio.filter(":checked").val();
     if(value == 1) {
-      setColors("0,0,0", "255,255,255");
-    } else if (value == 2) {
       setColors("255,255,255", "0,0,0");
+    } else if (value == 2) {
+      setColors("0,0,0", "255,255,255");
     } else if (value == 3) {
       setColors("141,196,63", "25,153,204");
     } else if (value == 4) {
