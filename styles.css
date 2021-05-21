@@ -1,0 +1,51 @@
+:root {
+  --bg-color: 0,0,0;
+  --shadow-color: 255,255,255;
+}
+
+body {
+  background-color:  rgb(var(--bg-color));
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 200px;
+  max-width: 600px;
+  padding: 10px;
+  position: relative;
+  background: rgb(var(--bg-color));
+}
+
+.bis-text {
+  padding-left: 200px;
+}
+
+.logo-shapes {
+}
+
+.safety-software-text {
+  padding-top: 120px;
+  padding-left: 50px;
+}
+
+.drop-shadow {
+  -webkit-filter: drop-shadow(1px 1px 0 rgb(var(--shadow-color)))
+                  drop-shadow(-1px -1px 0 rgb(var(--shadow-color)));
+  filter: drop-shadow(1px 1px 0 rgb(var(--shadow-color))) 
+          drop-shadow(-1px -1px 0 rgb(var(--shadow-color)));
+}
+
+#controls {
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 20%;
+  background: linear-gradient(90deg, #0600b8bd 0%, #00ff88a5 100%);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.custom-text {
+  color: white;
+}

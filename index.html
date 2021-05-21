@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>BIS Safety Software Logo Parallax</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./styles.css"/>
+
+</head>
+<body>
+
+	<div id="container" class="container">
+		<div id="scene" class="scene">
+      <div data-depth="0.60" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.61" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.62" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.63" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.64" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.65" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.66" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.67" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.68" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.69" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.70" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      <div data-depth="0.71" class="drop-shadow logo-shapes"><img src="./logo_shapes.png"></div>
+      
+
+      <div data-depth="0.86" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.87" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.88" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.89" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.90" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.91" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.92" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.93" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.94" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.95" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.96" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+      <div data-depth="0.97" class="drop-shadow bis-text"><img src="./bis_text.png"></div>
+
+      <div data-depth="1.10" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.11" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.12" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.13" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.14" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.15" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.16" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.17" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.18" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.19" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.20" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+      <div data-depth="1.21" class="drop-shadow safety-software-text"><img src="./safety_software_text.png"></div>
+		</div>
+	</div>
+  <form id="controls">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="background" id="blackBackground" checked value="1">
+      <label class="form-check-label custom-text" for="blackBackground">
+        Black Background - White Shadow
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="background" id="whiteBackground" value="2">
+      <label class="form-check-label custom-text" for="whiteBackground">
+        White Background - Black Shadow
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="background" id="greenBackground" value="3">
+      <label class="form-check-label custom-text" for="greenBackground">
+        Green Background - Blue Shadow
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="background" id="blueBackground" value="4">
+      <label class="form-check-label custom-text" for="blueBackground">
+        Blue Background - Green Shadow
+      </label>
+    </div>
+  </div>
+
+	<!-- Scripts -->
+	<script src="./parallax.min.js"></script>
+	<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene, {
+    relativeInput: true
+  });
+
+  parallax.friction(0.65, 0.65);
+
+  const myRadio = $("input[name=background]");
+  $('#controls input').on('change', function() {
+    let value = myRadio.filter(":checked").val();
+    if(value == 1) {
+      setColors("0,0,0", "255,255,255");
+    } else if (value == 2) {
+      setColors("255,255,255", "0,0,0");
+    } else if (value == 3) {
+      setColors("141,196,63", "25,153,204");
+    } else if (value == 4) {
+      setColors("25,153,204", "141,196,63");
+    }
+  });
+
+  function setColors(background, shadow) {
+    const newBg = "--bg-color:"+background;
+    const newShd = "--shadow-color:"+shadow;
+    $("html").css("--bg-color",background);
+    $("html").css("--shadow-color",shadow);
+    
+  }
+	</script>
+
+</body>
+</html>
